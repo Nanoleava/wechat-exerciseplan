@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init *)",
+      "WebSearch",
+      "Read(//c/Users/Administrator/.claude/**)",
+      "Bash(cp -r /tmp/academic-research-skills/skills /d/nano_personal2/.claude/skills/academic-research-skills)",
+      "Bash(cp -r /tmp/academic-research-skills/agents /d/nano_personal2/.claude/agents)",
+      "Bash(mkdir -p ~/.claude/skills)",
+      "Bash(mkdir -p ~/.claude/agents)",
+      "Bash(git remote *)",
+      "Bash(git add *)"
+    ]
+  }
+}

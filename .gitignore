@@ -1,0 +1,25 @@
+# WeChat Mini-Program
+miniprogram_npm/
+node_modules/
+
+# Cloud Functions
+cloudfunctions/*/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env & Secrets
+.env
+.env.local
+miniprogram/env.js
