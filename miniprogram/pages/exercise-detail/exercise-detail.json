@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "动作详情",
+  "usingComponents": {
+    "stat-ring": "/components/stat-ring/stat-ring"
+  }
+}

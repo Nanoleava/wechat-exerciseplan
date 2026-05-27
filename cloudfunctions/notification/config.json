@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "openapi": ["subscribeMessage.send"]
+  },
+  "triggers": [
+    {
+      "name": "morning_reminder",
+      "type": "timer",
+      "config": "0 0 7 * * * *"
+    },
+    {
+      "name": "noon_reminder",
+      "type": "timer",
+      "config": "0 0 12 * * * *"
+    },
+    {
+      "name": "evening_reminder",
+      "type": "timer",
+      "config": "0 0 20 * * * *"
+    }
+  ]
+}

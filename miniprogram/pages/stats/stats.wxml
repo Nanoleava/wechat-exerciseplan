@@ -1,0 +1,60 @@
+<view class="page-padded">
+  <!-- Tab 切换 -->
+  <view class="flex-center px-lg pt-md pb-md">
+    <view
+      wx:for="{{['weekly','monthly','total']}}"
+      wx:key="*this"
+      class="stat-tab {{activeTab === item ? 'stat-tab--active' : ''}}"
+      data-tab="{{item}}"
+      bind:tap="onTabChange"
+    >
+      {{item === 'weekly' ? '本周' : item === 'monthly' ? '本月' : '累计'}}
+    </view>
+  </view>
+
+  <view wx:if="{{isLoading}}" class="loading-state">
+    <text class="text-muted">加载中...</text>
+  </view>
+
+  <view wx:else>
+    <!-- 数值卡片 -->
+    <view class="flex-wrap px-lg">
+      <view class="stat-card">
+        <stat-ring percent="{{dashboard.weeklyRate || 0}}" label="周完成率" color="#07C160" />
+      </view>
+      <view class="stat-card">
+        <stat-ring percent="{{dashboard.monthlyRate || 0}}" label="月完成率" color="#1890FF" />
+      </view>
+    </view>
+
+    <view class="flex-between px-lg pt-md">
+      <view class="stat-num-card">
+        <view class="text-xxl text-primary text-bold">🔥 {{dashboard.currentStreak || 0}}</view>
+        <view class="text-xs text-muted mt-xs">连续打卡</view>
+      </view>
+      <view class="stat-num-card">
+        <view class="text-xxl text-bold">🏆 {{dashboard.longestStreak || 0}}</view>
+        <view class="text-xs text-muted mt-xs">最长连续</view>
+      </view>
+      <view class="stat-num-card">
+        <view class="text-xxl text-bold">📊 {{dashboard.totalCheckins || 0}}</view>
+        <view class="text-xs text-muted mt-xs">总打卡</view>
+      </view>
+      <view class="stat-num-card">
+        <view class="text-xxl text-bold">⏱ {{dashboard.totalMinutes || 0}}</view>
+        <view class="text-xs text-muted mt-xs">总时长(min)</view>
+      </view>
+    </view>
+
+    <!-- 图表区域 — Phase 6 实现 -->
+    <view class="card">
+      <view class="text-bold mb-md">体重变化趋势</view>
+      <canvas type="2d" id="weightChart" class="chart-canvas" />
+    </view>
+
+    <view class="card">
+      <view class="text-bold mb-md">最常训练肌群</view>
+      <canvas type="2d" id="muscleChart" class="chart-canvas" />
+    </view>
+  </view>
+</view>

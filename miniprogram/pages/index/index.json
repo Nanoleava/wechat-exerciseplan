@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "streak-badge": "/components/streak-badge/streak-badge",
+    "exercise-card": "/components/exercise-card/exercise-card"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "今日训练"
+}

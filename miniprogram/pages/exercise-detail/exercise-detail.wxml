@@ -1,0 +1,76 @@
+<view class="page-padded">
+  <view wx:if="{{isLoading}}" class="loading-state">
+    <text class="text-muted">加载中...</text>
+  </view>
+
+  <view wx:elif="{{!exercise}}" class="empty-state">
+    <view class="empty-title">动作不存在</view>
+    <view class="empty-desc">请返回重新选择</view>
+  </view>
+
+  <view wx:else>
+    <!-- 动作基本信息 -->
+    <view class="card">
+      <view class="flex-between">
+        <view class="text-xl text-bold">{{exercise.name}}</view>
+        <view class="chip chip-primary">{{exercise.difficulty === 1 ? '初级' : exercise.difficulty === 2 ? '中级' : '高级'}}</view>
+      </view>
+      <view class="text-sm text-muted mt-xs">{{exercise.nameEn || ''}}</view>
+
+      <view class="flex-align-center mt-md">
+        <view class="chip mr-sm">{{exercise.category === 'strength' ? '力量训练' : exercise.category === 'cardio' ? '有氧训练' : exercise.category === 'flexibility' ? '柔韧训练' : '平衡训练'}}</view>
+        <view class="chip mr-sm">{{exercise.muscleGroup === 'chest' ? '胸部' : exercise.muscleGroup === 'back' ? '背部' : exercise.muscleGroup === 'legs' ? '腿部' : exercise.muscleGroup === 'shoulders' ? '肩部' : exercise.muscleGroup === 'arms' ? '手臂' : exercise.muscleGroup === 'core' ? '核心' : '全身'}}</view>
+        <view class="chip">{{exercise.equipment === 'bodyweight' ? '自重' : exercise.equipment === 'dumbbell' ? '哑铃' : exercise.equipment === 'barbell' ? '杠铃' : exercise.equipment === 'machine' ? '器械' : exercise.equipment === 'band' ? '弹力带' : '壶铃'}}</view>
+      </view>
+    </view>
+
+    <!-- 动作描述 -->
+    <view class="card" wx:if="{{exercise.description}}">
+      <view class="text-bold mb-md">动作描述</view>
+      <view class="text-sm text-secondary">{{exercise.description}}</view>
+    </view>
+
+    <!-- 分步说明 -->
+    <view class="card" wx:if="{{exercise.steps && exercise.steps.length > 0}}">
+      <view class="text-bold mb-md">动作步骤</view>
+      <view wx:for="{{exercise.steps}}" wx:key="index" class="flex-align-center mb-sm">
+        <view class="step-num">{{index + 1}}</view>
+        <text class="text-sm text-secondary ml-md">{{item}}</text>
+      </view>
+    </view>
+
+    <!-- 常见错误 -->
+    <view class="card" wx:if="{{exercise.tips && exercise.tips.length > 0}}">
+      <view class="text-bold mb-md">常见错误与技巧</view>
+      <view wx:for="{{exercise.tips}}" wx:key="index" class="flex-align-center mb-sm">
+        <text class="text-warning mr-sm">⚠</text>
+        <text class="text-sm text-secondary">{{item}}</text>
+      </view>
+    </view>
+
+    <!-- 个人历史数据 -->
+    <view class="card" wx:if="{{exerciseStats}}">
+      <view class="text-bold mb-md">我的训练记录</view>
+
+      <view class="flex-between">
+        <view class="stat-box">
+          <view class="text-lg text-primary text-bold">{{exerciseStats.maxWeight || 0}}</view>
+          <view class="text-xs text-muted mt-xs">最大重量(kg)</view>
+        </view>
+        <view class="stat-box">
+          <view class="text-lg text-bold">{{exerciseStats.frequency || 0}}</view>
+          <view class="text-xs text-muted mt-xs">训练次数</view>
+        </view>
+        <view class="stat-box">
+          <view class="text-lg text-bold">{{exerciseStats.totalSets || 0}}</view>
+          <view class="text-xs text-muted mt-xs">累计组数</view>
+        </view>
+      </view>
+
+      <view wx:if="{{exerciseStats.volumeByWeek && exerciseStats.volumeByWeek.length > 0}}" class="mt-lg">
+        <view class="text-sm text-bold mb-sm">每周训练量变化</view>
+        <canvas type="2d" id="volumeChart" class="chart-canvas" />
+      </view>
+    </view>
+  </view>
+</view>

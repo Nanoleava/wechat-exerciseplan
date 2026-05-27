@@ -1,0 +1,12 @@
+.plan-card {
+  margin-bottom: var(--spacing-sm);
+}
+
+.plan-action {
+  padding: 10rpx 24rpx;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: var(--font-xs);
+  font-weight: 600;
+}

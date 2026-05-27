@@ -1,0 +1,12 @@
+.plan-tab {
+  padding: 12rpx 40rpx;
+  border-radius: var(--radius-md);
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  margin: 0 var(--spacing-xs);
+}
+
+.plan-tab--active {
+  background: var(--color-primary);
+  color: #FFFFFF;
+}

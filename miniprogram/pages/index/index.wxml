@@ -1,0 +1,66 @@
+<view class="page-padded">
+  <!-- 加载中 -->
+  <view wx:if="{{isLoading}}" class="loading-state">
+    <view class="skeleton">
+      <view class="skeleton-item" style="width:60%;height:48rpx;margin-bottom:24rpx;" />
+      <view class="skeleton-item" style="width:80%;" />
+      <view class="skeleton-item" style="width:80%;" />
+      <view class="skeleton-item" style="width:40%;" />
+    </view>
+  </view>
+
+  <!-- 加载失败 -->
+  <view wx:elif="{{loadError}}" class="error-state">
+    <view class="empty-title">加载失败</view>
+    <view class="empty-desc">请检查网络后重试</view>
+    <view class="retry-btn" bind:tap="loadData">重新加载</view>
+  </view>
+
+  <!-- 无计划 -->
+  <view wx:elif="{{isEmpty}}" class="empty-state">
+    <view class="empty-title">还没有训练计划</view>
+    <view class="empty-desc">选择一个训练计划开始你的健身之旅</view>
+    <button class="btn btn-primary mt-lg" bind:tap="goSelectPlan">选择训练计划</button>
+  </view>
+
+  <!-- 今日已完成 -->
+  <view wx:elif="{{isCompleted}}" class="completed-state pb-xl">
+    <view class="completed-icon">🎉</view>
+    <view class="text-xl text-bold mt-md">今日训练已完成!</view>
+    <view class="text-sm text-muted mt-sm">太棒了，继续保持！</view>
+    <view class="text-lg text-primary text-bold mt-lg">🔥 连续打卡 {{streak}} 天</view>
+  </view>
+
+  <!-- 正常训练日 -->
+  <view wx:else>
+    <streak-badge streak="{{streak}}" />
+
+    <view class="card">
+      <view class="flex-between">
+        <view>
+          <view class="text-bold">{{todayPlan.name}}</view>
+          <view class="text-sm text-muted mt-xs">第{{todayPlan.week}}周 · Day {{todayPlan.day}}</view>
+        </view>
+        <view class="text-sm text-muted" bind:tap="goSelectPlan">切换计划 ></view>
+      </view>
+    </view>
+
+    <view class="card">
+      <view class="text-bold mb-md">今日训练</view>
+      <exercise-card
+        wx:for="{{todayPlan.exercises}}"
+        wx:key="exerciseId"
+        exercise="{{item}}"
+        checked="{{todayCheckin && item.completed}}"
+        data-id="{{item.exerciseId}}"
+        bind:tap="goExerciseDetail"
+      />
+    </view>
+
+    <view class="px-md pb-lg">
+      <button class="btn btn-primary btn-block" bind:tap="goCheckin">
+        {{todayCheckin ? '继续打卡' : '开始打卡'}}
+      </button>
+    </view>
+  </view>
+</view>

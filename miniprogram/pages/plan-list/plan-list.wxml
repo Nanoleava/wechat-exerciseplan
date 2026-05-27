@@ -1,0 +1,54 @@
+<view class="page-padded">
+  <!-- Tab 切换 -->
+  <view class="flex-center px-lg pt-md pb-md">
+    <view
+      class="plan-tab {{activeTab === 'templates' ? 'plan-tab--active' : ''}}"
+      data-tab="templates"
+      bind:tap="onTabChange"
+    >推荐模板</view>
+    <view
+      class="plan-tab {{activeTab === 'myPlans' ? 'plan-tab--active' : ''}}"
+      data-tab="myPlans"
+      bind:tap="onTabChange"
+    >我的计划</view>
+  </view>
+
+  <view wx:if="{{isLoading}}" class="loading-state">
+    <text class="text-muted">加载中...</text>
+  </view>
+
+  <view wx:elif="{{activeTab === 'templates' && templates.length === 0}}" class="empty-state">
+    <view class="empty-desc">暂无推荐模板</view>
+  </view>
+
+  <view wx:elif="{{activeTab === 'myPlans' && myPlans.length === 0}}" class="empty-state">
+    <view class="empty-desc">还没有训练计划</view>
+    <view class="text-sm text-muted mt-sm">从推荐模板中复制一个开始</view>
+  </view>
+
+  <view wx:else>
+    <view wx:if="{{activeTab === 'templates'}}">
+      <plan-card
+        wx:for="{{templates}}"
+        wx:key="_id"
+        plan="{{item}}"
+        showActions="{{true}}"
+        bind:detail="goPlanDetail"
+        bind:copy="copyPlan"
+      />
+    </view>
+
+    <view wx:if="{{activeTab === 'myPlans'}}">
+      <plan-card
+        wx:for="{{myPlans}}"
+        wx:key="_id"
+        plan="{{item}}"
+        showActions="{{true}}"
+        bind:detail="goPlanDetail"
+        bind:activate="setActivePlan"
+      />
+    </view>
+
+    <view wx:if="{{!hasMore}}" class="text-center text-muted py-md text-xs">没有更多了</view>
+  </view>
+</view>

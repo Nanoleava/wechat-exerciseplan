@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "heatmap": "/components/heatmap/heatmap"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "日历"
+}

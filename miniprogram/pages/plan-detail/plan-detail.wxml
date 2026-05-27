@@ -1,0 +1,45 @@
+<view class="page-padded">
+  <view wx:if="{{isLoading}}" class="loading-state">
+    <text class="text-muted">加载中...</text>
+  </view>
+
+  <view wx:else>
+    <!-- 计划摘要 -->
+    <view class="card">
+      <view class="flex-between">
+        <view class="text-xl text-bold">{{plan.name}}</view>
+        <view class="chip chip-primary">{{plan.difficulty === 1 ? '初级' : plan.difficulty === 2 ? '中级' : '高级'}}</view>
+      </view>
+      <view class="text-sm text-muted mt-sm">{{plan.description}}</view>
+      <view class="flex-align-center mt-md">
+        <view class="chip mr-sm" wx:for="{{plan.tags}}" wx:key="*this">{{item}}</view>
+        <view class="text-xs text-muted ml-sm">{{plan.durationWeeks}}周计划</view>
+      </view>
+    </view>
+
+    <!-- 按天分组的动作列表 -->
+    <view class="card" wx:for="{{exercises}}" wx:key="dayIndex">
+      <view class="text-bold mb-md">Day {{item.dayIndex + 1}}</view>
+      <exercise-card
+        wx:for="{{item.moves}}"
+        wx:for-item="move"
+        wx:key="exerciseId"
+        exercise="{{move}}"
+      />
+    </view>
+
+    <!-- 操作按钮 -->
+    <view class="px-md pb-lg">
+      <view wx:if="{{plan.type === 'template'}}">
+        <button class="btn btn-primary btn-block mb-md" bind:tap="copyPlan">复制此计划</button>
+        <button class="btn btn-ghost btn-block" bind:tap="startPlan">开始此计划</button>
+      </view>
+      <view wx:else>
+        <button wx:if="{{mode === 'view'}}" class="btn btn-primary btn-block mb-md" bind:tap="toggleEdit">编辑计划</button>
+        <button wx:else class="btn btn-primary btn-block mb-md" bind:tap="toggleEdit">保存</button>
+        <button class="btn btn-ghost btn-block mb-md" bind:tap="startPlan">设为当前计划</button>
+        <button class="btn btn-danger btn-block" bind:tap="deletePlan">删除计划</button>
+      </view>
+    </view>
+  </view>
+</view>

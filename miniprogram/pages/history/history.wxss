@@ -1,0 +1,36 @@
+.history-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.history-week-label {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-sm);
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.history-item {
+  margin-top: var(--spacing-sm);
+}
+
+.completion-badge {
+  padding: 6rpx 16rpx;
+  border-radius: 20rpx;
+  font-size: var(--font-xs);
+  font-weight: 600;
+}
+
+.completion-full {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.completion-half {
+  background: #FFF9E6;
+  color: #E6A400;
+}
+
+.completion-low {
+  background: #FFF0F0;
+  color: var(--color-danger);
+}

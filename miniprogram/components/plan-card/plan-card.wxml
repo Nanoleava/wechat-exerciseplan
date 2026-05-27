@@ -1,0 +1,20 @@
+<view class="card plan-card" bind:tap="onDetail">
+  <view class="flex-between">
+    <view class="flex-1">
+      <view class="text-bold text-ellipsis">{{plan.name}}</view>
+      <view class="text-sm text-muted mt-xs text-ellipsis">{{plan.description || ''}}</view>
+    </view>
+    <view class="chip chip-primary ml-md">{{difficultyLabel}}</view>
+  </view>
+
+  <view class="flex-align-center mt-sm">
+    <view class="chip mr-sm">{{goalLabel}}</view>
+    <view class="text-xs text-muted">{{plan.durationWeeks || 0}}周</view>
+    <view wx:if="{{plan.copyCount}}" class="text-xs text-muted ml-md">{{plan.copyCount}}人使用</view>
+  </view>
+
+  <view class="flex-align-center mt-sm" wx:if="{{showActions}}">
+    <view class="plan-action" catch:tap="onCopy" wx:if="{{plan.type === 'template'}}">复制此计划</view>
+    <view class="plan-action" catch:tap="onActivate" wx:else>设为当前计划</view>
+  </view>
+</view>

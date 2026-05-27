@@ -1,0 +1,25 @@
+.exercise-card {
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.exercise-check {
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  border: 2rpx solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: var(--font-sm);
+  color: #FFFFFF;
+  transition: all 0.2s;
+}
+
+.exercise-check--done {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}

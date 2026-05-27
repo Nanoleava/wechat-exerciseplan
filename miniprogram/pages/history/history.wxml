@@ -1,0 +1,32 @@
+<view class="page-padded">
+  <view wx:if="{{isLoading}}" class="loading-state">
+    <text class="text-muted">加载中...</text>
+  </view>
+
+  <view wx:elif="{{checkins.length === 0}}" class="empty-state">
+    <view class="empty-title">还没有打卡记录</view>
+    <view class="empty-desc">开始你的第一次训练吧</view>
+  </view>
+
+  <view wx:else>
+    <view wx:for="{{groupedCheckins}}" wx:key="label" class="history-group">
+      <view class="history-week-label">{{item.label}}</view>
+      <view wx:for="{{item.items}}" wx:for-item="checkin" wx:key="_id" class="card history-item" data-id="{{checkin._id}}" bind:tap="goDetail">
+        <view class="flex-between">
+          <view>
+            <view class="text-bold">{{checkin.planName}}</view>
+            <view class="text-sm text-muted mt-xs">{{checkin.date}} · {{checkin.totalDuration || 0}}分钟</view>
+          </view>
+          <view class="flex-align-center">
+            <view class="completion-badge {{checkin.completionRate >= 1 ? 'completion-full' : checkin.completionRate >= 0.5 ? 'completion-half' : 'completion-low'}}">
+              {{checkin.completionRate >= 1 ? '完成' : Math.round(checkin.completionRate * 100) + '%'}}
+            </view>
+            <text class="text-xs text-muted ml-sm">></text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{!hasMore}}" class="text-center text-muted py-md text-xs">没有更多了</view>
+  </view>
+</view>

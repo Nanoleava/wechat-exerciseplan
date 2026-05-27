@@ -1,0 +1,58 @@
+<view class="page-padded">
+  <!-- 用户信息头部 -->
+  <view class="card flex-align-center">
+    <image class="avatar" src="{{user.avatarUrl || '/images/default-avatar.png'}}" mode="aspectFill" />
+    <view class="ml-md flex-1">
+      <view class="text-lg text-bold">{{user.nickName || '未设置昵称'}}</view>
+      <view class="text-sm text-muted mt-xs">编辑资料 ></view>
+    </view>
+  </view>
+
+  <!-- 身体数据 -->
+  <view class="card">
+    <view class="text-bold mb-md">身体数据</view>
+    <view class="flex-between mb-sm">
+      <text class="text-sm text-secondary">身高</text>
+      <text class="text-sm" bind:tap="onEditBodyStats">{{bodyStats.height || '--'}} cm</text>
+    </view>
+    <view class="flex-between mb-sm">
+      <text class="text-sm text-secondary">体重</text>
+      <text class="text-sm" bind:tap="onEditBodyStats">{{bodyStats.weight || '--'}} kg</text>
+    </view>
+    <view class="flex-between">
+      <text class="text-sm text-secondary">目标</text>
+      <text class="text-sm" bind:tap="onEditBodyStats">{{bodyStats.targetWeight || '--'}} kg</text>
+    </view>
+  </view>
+
+  <!-- 我的训练计划 -->
+  <view class="card flex-between" bind:tap="goMyPlans">
+    <text class="text-bold">我的训练计划</text>
+    <text class="text-sm text-muted">></text>
+  </view>
+
+  <!-- 打卡历史 -->
+  <view class="card flex-between" bind:tap="goHistory">
+    <text class="text-bold">打卡历史</text>
+    <text class="text-sm text-muted">></text>
+  </view>
+
+  <!-- 提醒设置 -->
+  <view class="card">
+    <view class="text-bold mb-md">提醒设置</view>
+    <view class="flex-between mb-sm">
+      <text class="text-sm text-secondary">训练提醒</text>
+      <switch checked="{{settings.reminderEnabled}}" bind:change="onReminderToggle" color="#07C160" />
+    </view>
+    <view class="flex-between">
+      <text class="text-sm text-secondary">提醒时间</text>
+      <text class="text-sm">{{settings.reminderTime}}</text>
+    </view>
+  </view>
+
+  <!-- 其他 -->
+  <view class="card flex-between" bind:tap="clearCache">
+    <text class="text-bold">清除缓存</text>
+    <text class="text-sm text-muted">></text>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+.step-num {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #FFFFFF;
+  font-size: var(--font-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.stat-box {
+  flex: 1;
+  text-align: center;
+  padding: var(--spacing-md) var(--spacing-sm);
+}
+
+.chart-canvas {
+  width: 100%;
+  height: 300rpx;
+}

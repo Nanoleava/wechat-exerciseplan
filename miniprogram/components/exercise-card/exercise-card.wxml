@@ -1,0 +1,19 @@
+<view class="exercise-card" bind:tap="onTap">
+  <view class="flex-between">
+    <view class="flex-align-center flex-1">
+      <view class="exercise-check {{checked ? 'exercise-check--done' : ''}}" catch:tap="onCheckToggle">
+        <text wx:if="{{checked}}">✓</text>
+      </view>
+      <view class="ml-md flex-1">
+        <view class="text-bold text-ellipsis">{{exercise.name || exercise.exerciseName}}</view>
+        <view class="text-xs text-muted mt-xs">
+          {{muscleLabel}} · {{equipmentLabel}}
+        </view>
+      </view>
+    </view>
+    <view class="text-right">
+      <view class="text-sm text-bold">{{exercise.sets || 0}}组 × {{exercise.reps || '0次'}}</view>
+      <view class="text-xs text-muted mt-xs">休息 {{exercise.restSeconds || 60}}s</view>
+    </view>
+  </view>
+</view>

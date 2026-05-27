@@ -1,0 +1,755 @@
+[
+  {
+    "name": "杠铃卧推",
+    "nameEn": "Barbell Bench Press",
+    "category": "strength",
+    "muscleGroup": "chest",
+    "equipment": "barbell",
+    "difficulty": 2,
+    "description": "经典胸部训练动作，主要刺激胸大肌，同时涉及前三角肌和肱三头肌。",
+    "steps": [
+      "仰卧在平板凳上，双脚平放在地面。",
+      "双手握杠，握距略宽于肩，将杠铃从架上取下。",
+      "缓慢下降至胸部乳头连线处，肘部呈45度角。",
+      "发力推起至锁定位置，但不要过度伸直肘关节。"
+    ],
+    "tips": [
+      "保持手腕中立，不要过度后弯。",
+      "不要将杠铃弹在胸口上——控制下降速度。"
+    ]
+  },
+  {
+    "name": "哑铃卧推",
+    "nameEn": "Dumbbell Bench Press",
+    "category": "strength",
+    "muscleGroup": "chest",
+    "equipment": "dumbbell",
+    "difficulty": 2,
+    "description": "哑铃卧推可提供更大的运动范围，更均衡地发展左右胸肌。",
+    "steps": [
+      "仰卧在平板凳上，双持哑铃置于胸部两侧。",
+      "推起哑铃至胸部上方，两臂伸直但不锁定。",
+      "缓慢下降至胸部两侧，感受胸肌拉伸。",
+      "发力推回起始位置。"
+    ],
+    "tips": [
+      "下降时肘部不要低于肩膀太多，保护肩关节。",
+      "可选平放哑铃在顶端相碰以强化内胸感受。"
+    ]
+  },
+  {
+    "name": "上斜哑铃卧推",
+    "nameEn": "Incline Dumbbell Press",
+    "category": "strength",
+    "muscleGroup": "chest",
+    "equipment": "dumbbell",
+    "difficulty": 2,
+    "description": "将板凳调至30-45度，重点刺激上胸肌群。",
+    "steps": [
+      "调整板凳为30-45度上斜。",
+      "仰卧，双持哑铃推起至顶部。",
+      "缓慢下降哑铃至上胸部位置。",
+      "发力推回起始位置。"
+    ],
+    "tips": [
+      "角度太太 (超过45度) 会让前三角肌过度参与。",
+      "不要刻意过度反弓背部。"
+    ]
+  },
+  {
+    "name": "绳索飞鸟",
+    "nameEn": "Cable Fly",
+    "category": "strength",
+    "muscleGroup": "chest",
+    "equipment": "machine",
+    "difficulty": 1,
+    "description": "利用龙门架进行的隔离动作，重点塑造胸肌外形和中缝。",
+    "steps": [
+      "将两侧滑轮调至肩高，站立于龙门架中央。",
+      "双手各握一手柄，上身微前倾，肘微弯。",
+      "手臂弧线向前合并，感受胸肌收缩。",
+      "缓慢恢复至起始位置。"
+    ],
+    "tips": [
+      "保持肘部角度固定，用胸肌而不是手臂发力。",
+      "不要过度伸展以致肩关节受力过大。"
+    ]
+  },
+  {
+    "name": "俯卧撑",
+    "nameEn": "Push Up",
+    "category": "strength",
+    "muscleGroup": "chest",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "最基础、最有效的自重胸部训练动作，同时锻炼核心和肱三头肌。",
+    "steps": [
+      "双手略宽于肩撑地，身体从头到脚成一条直线。",
+      "屈肘下降身体直至胸部近地。",
+      "发力推回起始位置。"
+    ],
+    "tips": [
+      "核心收紧不可塌腰。",
+      "可通过抬高双脚或缩短休息来增加难度。"
+    ]
+  },
+  {
+    "name": "钻石俯卧撑",
+    "nameEn": "Diamond Push Up",
+    "category": "strength",
+    "muscleGroup": "chest",
+    "equipment": "bodyweight",
+    "difficulty": 2,
+    "description": "双手并拢呈钻石形状的俯卧撑，强化肱三头肌和内胸。",
+    "steps": [
+      "双手拇指和食指相触形成菱形放在胸下。",
+      "身体保持直线，屈肘下降。",
+      "推回起始位置。"
+    ],
+    "tips": [
+      "这是一个较难的动作，可先从膝盖俯卧撑过渡。",
+      "肘部贴近身体而不是向外打开。"
+    ]
+  },
+  {
+    "name": "引体向上",
+    "nameEn": "Pull Up",
+    "category": "strength",
+    "muscleGroup": "back",
+    "equipment": "bodyweight",
+    "difficulty": 2,
+    "description": "经典背部训练动作，主要锻炼背阔肌和肱二头肌。",
+    "steps": [
+      "正手握住单杠，握距略宽于肩。",
+      "悬挂身体，肩胛骨下沉。",
+      "发力将身体拉起使下巴超过单杠。",
+      "控制下降至手臂接近完全伸直。"
+    ],
+    "tips": [
+      "不要借力摆动身体。",
+      "初学者可用弹力带辅助或使用引体向上机。"
+    ]
+  },
+  {
+    "name": "杠铃划船",
+    "nameEn": "Barbell Row",
+    "category": "strength",
+    "muscleGroup": "back",
+    "equipment": "barbell",
+    "difficulty": 2,
+    "description": "打造宽厚背部的核心动作，锻炼背阔肌、斜方肌和肱二头肌。",
+    "steps": [
+      "双脚与髋同宽，正手握住杠铃，握距与肩同宽。",
+      "上身由髋部前倾45-60度，保持背部平直。",
+      "将杠铃沿大腿方向拉向下腹。",
+      "在顶部挤压背部后缓慢下降。"
+    ],
+    "tips": [
+      "不要弓背——保持核心收紧。",
+      "不要用过大的重量导致借力。"
+    ]
+  },
+  {
+    "name": "哑铃划船",
+    "nameEn": "Dumbbell Row",
+    "category": "strength",
+    "muscleGroup": "back",
+    "equipment": "dumbbell",
+    "difficulty": 1,
+    "description": "单臂划船动作，更好地隔离每侧背部肌肉，纠正不平衡。",
+    "steps": [
+      "一只手和同侧膝盖撑在凳子上，另一手握哑铃悬于肩下。",
+      "保持背部平直，将哑铃沿肋骨拉向臀部。",
+      "挤压背部后缓慢下降。"
+    ],
+    "tips": [
+      "不要旋转躯干——保持稳定。",
+      "拉到顶端时肩胛骨向脊柱收紧。"
+    ]
+  },
+  {
+    "name": "高位下拉",
+    "nameEn": "Lat Pulldown",
+    "category": "strength",
+    "muscleGroup": "back",
+    "equipment": "machine",
+    "difficulty": 1,
+    "description": "模拟引体向上的动作模式，适合打造背阔肌宽度。",
+    "steps": [
+      "坐于器械上，大腿卡在固定垫下。",
+      "宽握把手，手臂伸直。",
+      "将把手拉向锁骨方向，肩胛骨下沉内收。",
+      "控制回放。"
+    ],
+    "tips": [
+      "不要过度后仰借力。",
+      "颈后下拉对肩关节压力大，更推荐颈前下拉。"
+    ]
+  },
+  {
+    "name": "坐姿绳索划船",
+    "nameEn": "Seated Cable Row",
+    "category": "strength",
+    "muscleGroup": "back",
+    "equipment": "machine",
+    "difficulty": 1,
+    "description": "锻炼中背部厚度的优质隔离动作。",
+    "steps": [
+      "坐于划船机上，双脚踏稳踏板，微屈膝。",
+      "握住V柄，双臂伸展，背部挺直。",
+      "将手柄拉向腹部，肩胛骨向后夹紧。",
+      "缓慢恢复至起始位置。"
+    ],
+    "tips": [
+      "不要摇摆身体借力。",
+      "全程保持背部平直，不要弓背。"
+    ]
+  },
+  {
+    "name": "硬拉",
+    "nameEn": "Deadlift",
+    "category": "strength",
+    "muscleGroup": "back",
+    "equipment": "barbell",
+    "difficulty": 3,
+    "description": "全身复合动作之王，锻炼整个后链——背部、臀大肌、腘绳肌。",
+    "steps": [
+      "杠铃置于地上，双脚与髋同宽，小腿靠近杠铃杆。",
+      "屈髋屈膝俯身，双手握住杠铃。",
+      "收紧背部，深吸气绷紧核心。",
+      "同时伸髋伸膝站起，将杠铃拉至大腿前方。",
+      "控制下放杠铃回地。"
+    ],
+    "tips": [
+      "任何情况都不要弓背——直背是硬拉的最重要原则。",
+      "初学用轻重量学习动作模式。"
+    ]
+  },
+  {
+    "name": "杠铃深蹲",
+    "nameEn": "Barbell Squat",
+    "category": "strength",
+    "muscleGroup": "legs",
+    "equipment": "barbell",
+    "difficulty": 2,
+    "description": "下肢训练的黄金动作，锻炼股四头肌、臀大肌和后侧链。",
+    "steps": [
+      "将杠铃放在斜方肌上 (高杠深蹲)，双手握住杠铃。",
+      "出杠后退两步，双脚略宽于肩，脚尖微外展。",
+      "吸气后下蹲至大腿至少平行地面。",
+      "通过脚跟发力站起。"
+    ],
+    "tips": [
+      "核心全程收紧，不要驼背。",
+      "膝盖方向与脚尖方向一致。"
+    ]
+  },
+  {
+    "name": "哑铃深蹲",
+    "nameEn": "Goblet Squat",
+    "category": "strength",
+    "muscleGroup": "legs",
+    "equipment": "dumbbell",
+    "difficulty": 1,
+    "description": "手持一个哑铃于胸前，本动作自然引导正确的深蹲姿势。",
+    "steps": [
+      "双手捧一个哑铃置于胸前。",
+      "双脚与肩同宽或略宽，脚尖微外展。",
+      "下蹲至大腿至少平行地面。",
+      "站起发力。"
+    ],
+    "tips": [
+      "哑铃不要离身体太远——保持在胸前。",
+      "下降时肘部轻触膝盖内侧。"
+    ]
+  },
+  {
+    "name": "腿举",
+    "nameEn": "Leg Press",
+    "category": "strength",
+    "muscleGroup": "legs",
+    "equipment": "machine",
+    "difficulty": 1,
+    "description": "使用器械对腿部进行安全的大重量训练。",
+    "steps": [
+      "坐在腿举机上，背部紧贴垫，双脚肩宽放在踏板上。",
+      "解锁安全杆，屈膝下降至膝盖呈90度。",
+      "通过脚跟发力推回，但不锁膝关节。"
+    ],
+    "tips": [
+      "不要锁死在膝盖——给关节留缓冲。",
+      "下降不要过深以免腰离垫。"
+    ]
+  },
+  {
+    "name": "腿弯举",
+    "nameEn": "Leg Curl",
+    "category": "strength",
+    "muscleGroup": "legs",
+    "equipment": "machine",
+    "difficulty": 1,
+    "description": "孤立锻炼腘绳肌的器械动作。",
+    "steps": [
+      "俯卧在腿弯举器械上，脚踝置于滚轴下方。",
+      "屈膝将滚轴向臀部方向弯举。",
+      "在顶端挤压腘绳肌后缓慢放回。"
+    ],
+    "tips": [
+      "不要借力用臀部发力。",
+      "全程控制速度，不要弹振。"
+    ]
+  },
+  {
+    "name": "腿屈伸",
+    "nameEn": "Leg Extension",
+    "category": "strength",
+    "muscleGroup": "legs",
+    "equipment": "machine",
+    "difficulty": 1,
+    "description": "孤立锻炼股四头肌的器械动作。",
+    "steps": [
+      "坐在腿屈伸器上，脚踝放在滚轴前。",
+      "伸膝将滚轴向上方抬起。",
+      "在顶部挤压股四头肌后缓慢下降。"
+    ],
+    "tips": [
+      "不要踢到头锁死膝盖。",
+      "可作为深蹲前的预疲劳动作。"
+    ]
+  },
+  {
+    "name": "罗马尼亚硬拉",
+    "nameEn": "Romanian Deadlift",
+    "category": "strength",
+    "muscleGroup": "legs",
+    "equipment": "barbell",
+    "difficulty": 2,
+    "description": "专注锻炼腘绳肌和臀大肌的硬拉变式。",
+    "steps": [
+      "双手握住杠铃，膝盖微屈（保持固定角度）。",
+      "通过髋部后移，将杠铃沿腿前侧下降。",
+      "感受腘绳肌拉伸后展髋回正。"
+    ],
+    "tips": [
+      "全程保持背部直线。",
+      "杠铃贴近腿部下降。"
+    ]
+  },
+  {
+    "name": "保加利亚分腿蹲",
+    "nameEn": "Bulgarian Split Squat",
+    "category": "strength",
+    "muscleGroup": "legs",
+    "equipment": "bodyweight",
+    "difficulty": 2,
+    "description": "单侧下肢动作，锻炼股四头肌、臀部和核心稳定性。",
+    "steps": [
+      "后脚放在身后的板凳上。",
+      "前脚向前迈一步，保持上身直立。",
+      "下蹲至前大腿平行地面。",
+      "前脚跟发力站起。"
+    ],
+    "tips": [
+      "初学者可先自重练习。",
+      "前膝不要超过脚尖太多。"
+    ]
+  },
+  {
+    "name": "臀桥",
+    "nameEn": "Glute Bridge",
+    "category": "strength",
+    "muscleGroup": "legs",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "简单的臀部激活与锻炼动作，适合初学者。",
+    "steps": [
+      "仰卧，膝盖弯曲，双脚平放在地。",
+      "收紧臀部发力将臀部向上顶起。",
+      "在顶部挤压臀肌后缓慢下降。"
+    ],
+    "tips": [
+      "动作顶点身体呈一条直线。",
+      "可在骨盆上放哑铃增加负荷。"
+    ]
+  },
+  {
+    "name": "哑铃推举",
+    "nameEn": "Dumbbell Shoulder Press",
+    "category": "strength",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell",
+    "difficulty": 2,
+    "description": "主要刺激前三角肌和中三角肌的推举动作。",
+    "steps": [
+      "坐在板凳上，背部挺直。",
+      "双手持哑铃举至肩高，掌心向前。",
+      "推起哑铃至头顶但不锁死肘关节。",
+      "缓慢下降至耳朵两侧。"
+    ],
+    "tips": [
+      "不要后仰过多——核心收紧。",
+      "哑铃不要相互碰撞。"
+    ]
+  },
+  {
+    "name": "侧平举",
+    "nameEn": "Lateral Raise",
+    "category": "strength",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell",
+    "difficulty": 1,
+    "description": "锻炼中三角肌宽度的核心动作。",
+    "steps": [
+      "双手各持一哑铃，身体微前倾，肘部微弯。",
+      "将哑铃侧向举至肩高水平。",
+      "在顶部挤压后缓慢下降。"
+    ],
+    "tips": [
+      "不要借力摆臂——用中三角肌发力。",
+      "小重量高次数效果更好。"
+    ]
+  },
+  {
+    "name": "前平举",
+    "nameEn": "Front Raise",
+    "category": "strength",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell",
+    "difficulty": 1,
+    "description": "锻炼前三角肌的隔离动作。",
+    "steps": [
+      "双手持哑铃置于大腿前方，掌心朝后。",
+      "轮流或同时将哑铃举至肩前。",
+      "缓慢下降。"
+    ],
+    "tips": [
+      "避免借力——不要用躯干摆动。",
+      "前三角肌在推举动作中负担已较大，本动作为辅助。"
+    ]
+  },
+  {
+    "name": "俯身飞鸟",
+    "nameEn": "Bent-Over Rear Delt Fly",
+    "category": "strength",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell",
+    "difficulty": 2,
+    "description": "锻炼后三角肌的重要动作，有助于肩部整体平衡和姿态。",
+    "steps": [
+      "上身前倾至接近水平，双手持哑铃悬于肩下方。",
+      "肘微弯，将哑铃向两侧拉开至肩高。",
+      "挤压后三角肌后缓慢下降。"
+    ],
+    "tips": [
+      "用小重量，感受后三角肌发力。",
+      "不要将肩胛骨过度夹紧——这是后三角肌动作不是背部动作。"
+    ]
+  },
+  {
+    "name": "阿诺德推举",
+    "nameEn": "Arnold Press",
+    "category": "strength",
+    "muscleGroup": "shoulders",
+    "equipment": "dumbbell",
+    "difficulty": 2,
+    "description": "结合旋转的推举变式，全方位刺激三角肌。",
+    "steps": [
+      "坐在板凳上，双手持哑铃于肩前，掌心朝向自己。",
+      "推起哑铃的同时旋转手腕至掌心向前。",
+      "下降时反向旋转回起始位置。"
+    ],
+    "tips": [
+      "选择比普通推举轻的重量——旋转环节需要控制力。",
+      "全程控制，不要弹跳。"
+    ]
+  },
+  {
+    "name": "杠铃弯举",
+    "nameEn": "Barbell Curl",
+    "category": "strength",
+    "muscleGroup": "arms",
+    "equipment": "barbell",
+    "difficulty": 1,
+    "description": "最经典的肱二头肌训练动作。",
+    "steps": [
+      "双手与肩同宽反握杠铃，手臂伸展。",
+      "保持肘部贴近身体，弯曲肘部将杠铃举至肩前。",
+      "在顶部挤压肱二头肌后缓慢下降。"
+    ],
+    "tips": [
+      "不要借力摆背——用肱二头肌发力。",
+      "全程保持肘部在身体两侧。"
+    ]
+  },
+  {
+    "name": "哑铃弯举",
+    "nameEn": "Dumbbell Curl",
+    "category": "strength",
+    "muscleGroup": "arms",
+    "equipment": "dumbbell",
+    "difficulty": 1,
+    "description": "哑铃版本的弯举可独立锻炼每侧肱二头肌。",
+    "steps": [
+      "坐在凳子上，双手各持一哑铃，手臂伸展。",
+      "交替或同时弯举哑铃至肩前。",
+      "控制下降。"
+    ],
+    "tips": [
+      "旋转手腕（掌心朝上）可获得更好的二头肌收缩。",
+      "可以做坐姿交替弯举来纠正力量不平衡。"
+    ]
+  },
+  {
+    "name": "锤式弯举",
+    "nameEn": "Hammer Curl",
+    "category": "strength",
+    "muscleGroup": "arms",
+    "equipment": "dumbbell",
+    "difficulty": 1,
+    "description": "掌心相对握持的弯举，更多锻炼肱肌和前臂。",
+    "steps": [
+      "双手持哑铃，掌心相对（锤式握法）。",
+      "保持手掌朝向不变，弯举哑铃。",
+      "缓慢下降。"
+    ],
+    "tips": [
+      "同时或交替进行。",
+      "较窄的握距将更多刺激转移到肱肌。"
+    ]
+  },
+  {
+    "name": "碎颅者",
+    "nameEn": "Skull Crusher",
+    "category": "strength",
+    "muscleGroup": "arms",
+    "equipment": "barbell",
+    "difficulty": 2,
+    "description": "三头肌经典训练动作，仰卧将杠铃下放到额头附近。",
+    "steps": [
+      "仰卧，双手窄握杠铃推起至胸前。",
+      "保持上臂不动，屈肘将杠铃下放到额头方向。",
+      "发力伸展肘部回到起始位置。"
+    ],
+    "tips": [
+      "使用EZ曲杠减轻手腕压力。",
+      "不要让杠铃真的碰到额头——在最低端保持肱三头肌的紧张。"
+    ]
+  },
+  {
+    "name": "绳索下压",
+    "nameEn": "Tricep Pushdown",
+    "category": "strength",
+    "muscleGroup": "arms",
+    "equipment": "machine",
+    "difficulty": 1,
+    "description": "龙门架肱三头肌隔离动作，适合作为训练收尾。",
+    "steps": [
+      "将绳索连接滑轮高处，握住两端。",
+      "上臂贴近身体，肘部固定。",
+      "将绳索向下压至手臂伸直但不锁死。",
+      "控制回到起始位置。"
+    ],
+    "tips": [
+      "保持身体稳定——不要用体重下压。",
+      "在底部可微微分开绳索双头以强化收缩。"
+    ]
+  },
+  {
+    "name": "窄距卧推",
+    "nameEn": "Close-Grip Bench Press",
+    "category": "strength",
+    "muscleGroup": "arms",
+    "equipment": "barbell",
+    "difficulty": 2,
+    "description": "窄握距卧推，将重点从胸部转移到肱三头肌。",
+    "steps": [
+      "仰卧平板之上，双手与肩同宽或略窄握杠。",
+      "下杆到胸下部，肘部贴近身体。",
+      "推回起始位置。"
+    ],
+    "tips": [
+      "握距不要过窄以免增加腕关节压力。",
+      "肘部贴近身体是重点。"
+    ]
+  },
+  {
+    "name": "平板支撑",
+    "nameEn": "Plank",
+    "category": "strength",
+    "muscleGroup": "core",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "锻炼核心稳定性的基础动作，训练腹横肌和腹直肌。",
+    "steps": [
+      "前臂撑地，肘部在肩正下方。",
+      "身体从头到脚成一条直线。",
+      "收紧腹部和臀部，保持姿势。"
+    ],
+    "tips": [
+      "不要塌腰或翘臀——核心全程收紧。",
+      "从30秒开始逐渐增加时间。"
+    ]
+  },
+  {
+    "name": "卷腹",
+    "nameEn": "Crunch",
+    "category": "strength",
+    "muscleGroup": "core",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "基础腹肌训练动作，比仰卧起坐对腰椎更友好。",
+    "steps": [
+      "仰卧，膝盖弯曲，双脚平放。",
+      "双手交叉在胸前或扶在耳侧（不拉头部）。",
+      "用腹肌发力使肩胛骨离地2-3厘米。",
+      "挤压腹肌后缓慢下降。"
+    ],
+    "tips": [
+      "不要猛拉头部——这是腹肌动作不是脖子动作。",
+      "全程保持下巴抬起的姿势。"
+    ]
+  },
+  {
+    "name": "仰卧举腿",
+    "nameEn": "Lying Leg Raise",
+    "category": "strength",
+    "muscleGroup": "core",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "锻炼下腹部的最佳动作之一。",
+    "steps": [
+      "仰卧，双手置于臀下或体侧。",
+      "双脚并拢，缓慢抬起至与地面约90度。",
+      "控制下降但不让脚触地。"
+    ],
+    "tips": [
+      "下降时不要塌腰——若非则可减小动作幅度。",
+      "进阶可加负重于双脚。"
+    ]
+  },
+  {
+    "name": "俄罗斯转体",
+    "nameEn": "Russian Twist",
+    "category": "strength",
+    "muscleGroup": "core",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "锻炼腹斜肌的转体动作。",
+    "steps": [
+      "坐于地上，后仰约45度，膝盖弯曲，脚离地或触点地。",
+      "双手合十，左右转动躯干。"
+    ],
+    "tips": [
+      "保持下背部中立——不要塌腰。",
+      "可手持哑铃或药球增加负荷。"
+    ]
+  },
+  {
+    "name": "悬吊举腿",
+    "nameEn": "Hanging Leg Raise",
+    "category": "strength",
+    "muscleGroup": "core",
+    "equipment": "bodyweight",
+    "difficulty": 3,
+    "description": "高级腹肌訓練动作，需要良好的握力和核心力量。",
+    "steps": [
+      "双手吊于单杠，身体垂直悬挂。",
+      "保持腿伸直，抬脚至脚高过腰部。",
+      "控制下降。"
+    ],
+    "tips": [
+      "如无法直腿可从曲膝盖开始。",
+      "不要借力摆动——全程控制。"
+    ]
+  },
+  {
+    "name": "波比跳",
+    "nameEn": "Burpee",
+    "category": "cardio",
+    "muscleGroup": "fullBody",
+    "equipment": "bodyweight",
+    "difficulty": 2,
+    "description": "全身HIIT王牌动作，结合深蹲、平板支撑和跳跃。",
+    "steps": [
+      "从站姿下蹲，双手着地。",
+      "双脚跳回至俯卧撑姿势。",
+      "做一个俯卧撑（可选）。",
+      "双脚跳回至蹲姿，爆发向上跳跃，双手举过头顶。"
+    ],
+    "tips": [
+      "根据自己的能力调整节奏。",
+      "落地时膝盖微曲缓冲。"
+    ]
+  },
+  {
+    "name": "开合跳",
+    "nameEn": "Jumping Jack",
+    "category": "cardio",
+    "muscleGroup": "fullBody",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "基础有氧热身动作，提升心率。",
+    "steps": [
+      "双脚并拢站立，双手下垂。",
+      "跳起时分立双脚，同时击掌过头。",
+      "跳回起始位置。"
+    ],
+    "tips": [
+      "保持节奏，落地时膝盖微曲缓冲。",
+      "可作为热身进行30-60秒。"
+    ]
+  },
+  {
+    "name": "高抬腿",
+    "nameEn": "High Knees",
+    "category": "cardio",
+    "muscleGroup": "fullBody",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "原地跑动动作，提高心率和敏捷性。",
+    "steps": [
+      "原地跑步，每次抬膝至腰部高度。",
+      "配合手臂摆动。"
+    ],
+    "tips": [
+      "保持核心稳定，前脚掌着地。",
+      "设定30-60秒一组。"
+    ]
+  },
+  {
+    "name": "登山者",
+    "nameEn": "Mountain Climber",
+    "category": "cardio",
+    "muscleGroup": "fullBody",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "原地平板支撑中交替提膝，锻炼心肺和核心。",
+    "steps": [
+      "成平板支撑姿势。",
+      "交替将膝盖向胸部方向提起。",
+      "保持快速但不失平稳。"
+    ],
+    "tips": [
+      "核心保持收紧不要塌腰。",
+      "可以根据节奏放慢速度确保动作质量。"
+    ]
+  },
+  {
+    "name": "跳绳",
+    "nameEn": "Jump Rope",
+    "category": "cardio",
+    "muscleGroup": "fullBody",
+    "equipment": "bodyweight",
+    "difficulty": 1,
+    "description": "高效有氧训练方式，锻炼协调性和心肺耐力。",
+    "steps": [
+      "握住跳绳手柄，绳子从身后甩过头上。",
+      "用前脚掌轻轻跳起，让绳子从脚下经过。",
+      "保持稳定节奏。"
+    ],
+    "tips": [
+      "手腕转动而非手臂大圈——省力。",
+      "落地轻巧，减少膝盖冲击。"
+    ]
+  }
+]

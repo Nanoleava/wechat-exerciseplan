@@ -1,0 +1,9 @@
+<view class="streak-wrap {{animated ? 'streak-pop' : ''}}">
+  <view class="streak-badge">
+    <text class="streak-emoji">🔥</text>
+    <view class="streak-info">
+      <view class="text-lg text-bold">连续打卡 {{streak}} 天</view>
+      <view class="text-xs text-muted mt-xs" wx:if="{{longestStreak > 0}}">最长记录: {{longestStreak}} 天</view>
+    </view>
+  </view>
+</view>

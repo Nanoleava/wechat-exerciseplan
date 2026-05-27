@@ -1,0 +1,43 @@
+.cal-cell {
+  width: 14.28%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rpx;
+  position: relative;
+}
+
+.cal-cell--empty {
+  opacity: 0;
+}
+
+.cal-day {
+  width: 64rpx;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: var(--font-md);
+  position: relative;
+  z-index: 1;
+}
+
+.cal-cell[data-level="1"] .cal-day { background: #9be9a8; color: #fff; }
+.cal-cell[data-level="2"] .cal-day { background: #40c463; color: #fff; }
+.cal-cell[data-level="3"] .cal-day { background: #30a14e; color: #fff; }
+.cal-cell[data-level="4"] .cal-day { background: #216e39; color: #fff; }
+
+.heat-legend-box {
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 4rpx;
+  margin: 0 4rpx;
+}
+
+.level-0 { background: #ebedf0; }
+.level-1 { background: #9be9a8; }
+.level-2 { background: #40c463; }
+.level-3 { background: #30a14e; }
+.level-4 { background: #216e39; }

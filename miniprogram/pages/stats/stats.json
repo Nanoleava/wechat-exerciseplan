@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "stat-ring": "/components/stat-ring/stat-ring"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "统计"
+}

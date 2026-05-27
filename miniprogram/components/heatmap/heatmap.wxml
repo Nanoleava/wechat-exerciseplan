@@ -1,0 +1,47 @@
+<view class="heatmap-wrap">
+  <view class="heatmap-scroll">
+    <!-- 月份标签行 -->
+    <view class="heatmap-months">
+      <view class="heatmap-month-gap" style="width: 28rpx;" />
+      <view
+        wx:for="{{monthLabels}}"
+        wx:key="weekIndex"
+        class="heatmap-month-label"
+        style="left: {{item.weekIndex * (cellSize + cellGap) * 2}}rpx;"
+      >{{item.label}}</view>
+    </view>
+
+    <view class="heatmap-grid-row">
+      <!-- 星期标签 -->
+      <view class="heatmap-weekdays">
+        <text wx:for="{{['','一','','三','','五','']}}" wx:key="index" class="heatmap-weekday">{{item}}</text>
+      </view>
+
+      <!-- 格子矩阵 (按列渲染) -->
+      <view class="heatmap-columns">
+        <view wx:for="{{weeks}}" wx:for-index="wi" wx:key="wi" class="heatmap-column">
+          <view
+            wx:for="{{item}}"
+            wx:for-index="di"
+            wx:key="di"
+            class="heatmap-cell {{item.level === -1 ? 'heatmap-cell--dim' : ''}}"
+            style="width: {{cellSize}}rpx; height: {{cellSize}}rpx; background: {{item.level === -1 ? 'transparent' : item.level === 0 ? '#ebedf0' : item.level === 1 ? '#9be9a8' : item.level === 2 ? '#40c463' : item.level === 3 ? '#30a14e' : '#216e39'}}; margin: {{cellGap}}rpx;"
+            data-date="{{item.date}}"
+            bind:tap="onCellTap"
+          />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 图例 -->
+  <view class="heatmap-legend">
+    <text class="text-xs text-muted mr-sm">少</text>
+    <view class="heatmap-legend-cell" style="background: #ebedf0;" />
+    <view class="heatmap-legend-cell" style="background: #9be9a8;" />
+    <view class="heatmap-legend-cell" style="background: #40c463;" />
+    <view class="heatmap-legend-cell" style="background: #30a14e;" />
+    <view class="heatmap-legend-cell" style="background: #216e39;" />
+    <text class="text-xs text-muted ml-sm">多</text>
+  </view>
+</view>

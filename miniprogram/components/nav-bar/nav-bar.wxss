@@ -1,0 +1,45 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-bar-left {
+  position: absolute;
+  left: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  font-size: var(--font-md);
+  color: var(--color-text);
+}
+
+.nav-back-icon {
+  font-size: 44rpx;
+  line-height: 1;
+  margin-right: 4rpx;
+}
+
+.nav-back-text {
+  font-size: var(--font-md);
+}
+
+.nav-bar-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  max-width: 400rpx;
+}
+
+.nav-bar-right {
+  position: absolute;
+  right: var(--spacing-md);
+}
